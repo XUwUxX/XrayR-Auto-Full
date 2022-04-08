@@ -104,16 +104,18 @@ error_detect_depends() {
 }
 
 # Cài đặt trước cài đặt
+  echo "Bản việt hóa được thực hiện bởi @lisa_is_me"
+  echo "--------------------------------"
 pre_install_docker_compose() {
-  echo -e "  [1] 4g.quoctai.xyz"
-  echo -e "  [2] 4g.quoctai.xyz"
+  echo -e "  [1] csa-4gvpn.tk"
+  echo -e "  [2] tùy chỉnh [có thể lỗi]"
   read -p "  Web đang sử dụng:" api_host
   if [ "$api_host" == "1" ]; then
-    api_host="http://4g.quoctai.xyz/"
+    api_host="https://csa-4gvpn.tk/"
   elif [ "$api_host" == "2" ]; then
-    api_host="http://4g.quoctai.xyz/"
+    api_host="https://csa-4gvpn.tk/"
   else 
-    api_host="http://4g.quoctai.xyz/"
+    api_host="${api_host}"
   fi
 
   echo "--------------------------------"
@@ -181,8 +183,8 @@ Nodes:
   -
     PanelType: "V2board" # Panel type: SSpanel, V2board, PMpanel, Proxypanel
     ApiConfig:
-      ApiHost: "http://4g.quoctai.xyz/"
-      ApiKey: "daudau432000xxxxxxxx"
+      ApiHost: "https://csa-4gvpn.tk/"
+      ApiKey: "@lisa_is_me"
       NodeID: 41
       NodeType: V2ray # Node type: V2ray, Trojan, Shadowsocks, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
@@ -352,7 +354,7 @@ clear
 while true; do
   echo "  -----XrayR Aiko-----"
   echo "  Địa chỉ dự án và tài liệu trợ giúp:  https://github.com/AikoCute/XrayR"
-  echo "  AikoCute Hột Me"
+  echo "  AikoCute Hột Me and Lisa OwO"
   echo "  Vui lòng nhập một số để Thực Hiện Câu Lệnh:"
   for ((i = 1; i <= ${#operation[@]}; i++)); do
     hint="${operation[$i - 1]}"
